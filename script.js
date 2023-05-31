@@ -1,13 +1,10 @@
 // Obtener referencias a los elementos del DOM
 const numberElement = document.getElementById('number');
-const incrementButton = document.getElementById('increment');
-const decrementButton = document.getElementById('decrement');
 const audio = new Audio('sound.mp3')
 
 function playSound1() {
   audio.play();
 }
-
 
 // Variable para almacenar el número actual
 let number = 0;
@@ -24,16 +21,8 @@ function incrementNumber() {
   updateNumber();
 }
 
-// Función para decrementar el número
-function decrementNumber() {
-  number--;
-  playSound1()
-  updateNumber();
-}
-
 // Asignar los controladores de eventos a los botones
-incrementButton.addEventListener('click', incrementNumber);
-decrementButton.addEventListener('click', decrementNumber);
+numberElement.addEventListener('click', incrementNumber);
 
 // Actualizar el número inicial en la página
 updateNumber();
