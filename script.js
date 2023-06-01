@@ -1,5 +1,6 @@
 // Obtener referencias a los elementos del DOM
 const numberElement = document.getElementById('number');
+const body = document.getElementById('body')
 const audio = new Audio('sound.mp3')
 
 function playSound1() {
@@ -16,13 +17,13 @@ function updateNumber() {
 
 // Función para incrementar el número
 function incrementNumber() {
-  number++;
   playSound1()
+  number++;
   updateNumber();
 }
 
 // Asignar los controladores de eventos a los botones
-numberElement.addEventListener('click', incrementNumber);
+body.addEventListener('click', incrementNumber);
 
 // Actualizar el número inicial en la página
 updateNumber();
