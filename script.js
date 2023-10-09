@@ -1,5 +1,5 @@
 // Obtener referencias a los elementos del DOM
-const numberElement = document.getElementById('number');
+const numberElement = document.querySelector('.number');
 const body = document.getElementById('body')
 const audio = new Audio('sound.mp3')
 
