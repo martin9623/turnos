@@ -15,11 +15,11 @@ html, body {
 .retiro {
   display: flex;
   justify-content: center;
-  font-size: 150px;
-  font-weight: 30vh;
+  font-size: 17vh;
   margin: auto;
-  width: 100vh;
   text-wrap: nowrap;
+  width: 100vh;
+  max-width: 100vh;
 }
 
 .number {
