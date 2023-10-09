@@ -15,32 +15,41 @@ html, body {
 .body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-  max-width: 100vw;
+  
 }
 
 .retiro {
-  font-size: 7vw;
+  display: flex;
+  justify-content: center;
+  font-size: 17vh;
+  margin: auto;
   text-wrap: nowrap;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  width: 100vh;
+  max-width: 100vh;
 }
 
 .number {
-  margin: 0 auto;
+  margin: auto;
   font-size: 20vh;
+  position: absolute;
   width: 100%;
-  text-align: center;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .number::before {
   content: "Número: ";
 }
 
+.contenedor_video {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
 .ads {
   height: 50vh;
-  width: 100%;
 }
